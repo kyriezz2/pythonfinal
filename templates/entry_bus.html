@@ -1,0 +1,21 @@
+{% extends 'chushi.html' %}
+
+{% block body %}
+
+
+
+<link rel="stylesheet" href="/static/hf.css" />
+<form method='POST' action='/search3'>
+<table>
+    <p>欢迎使用公交路线规划！请输入你的起点和终点，查询你的公交路线吧！</p>
+{#<tr><td>color:</td><td><input name='color' type='color' width='60'></td></tr>#}
+{#<tr><td>color01:</td><td><input name='color01' type='color' width='60'></td></tr>#}
+<tr><td>起点:</td><td><input name='bus_origin' type='TEXT' width='60'></td></tr>
+    <tr><td>终点:</td><td><input name='bus_zhongdian' type='TEXT' width='60'></td></tr>
+        <tr><td>城市:</td><td><input name='bus_city' type='TEXT' width='60'></td></tr>
+
+</table>
+<p><input value='尝试一下吧！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

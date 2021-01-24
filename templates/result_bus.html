@@ -1,0 +1,13 @@
+{% extends 'chushi.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="/static/hf.css" />
+<div class="table-container">
+<p>您输入的起点为：{{ thebus_origin }}您输入的终点为：{{ thebus_disitination }}公交规划如下</p>
+<table>
+<tr><td>步行规划:</td><td>{{ the_bus }}</td></tr>
+</table>
+
+</div>
+
+{% endblock %}

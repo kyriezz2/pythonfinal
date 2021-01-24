@@ -1,0 +1,21 @@
+{% extends 'chishi.html' %}
+
+{% block body %}
+
+
+<link rel="stylesheet" href="/static/hf.css" />
+
+<form method='POST' action='/search6'>
+<table>
+    <p>货车路线规划，请输入起点和终点（请用结构化地址，例如：广东省广州市从化区中山大学南方学院）车辆的size(1：微型车，2：轻型车（默认值），3：中型车，4：重型车)</p>
+{#<tr><td>color:</td><td><input name='color' type='color' width='60'></td></tr>#}
+{#<tr><td>color01:</td><td><input name='color01' type='color' width='60'></td></tr>#}
+<tr><td>请输入起点:</td><td><input name='huoche_origin' type='TEXT' width='60'></td></tr>
+    <tr><td>请输入终点:</td><td><input name='huoche_zhongdian' type='TEXT' width='60'></td></tr>
+    <tr><td>请输入size:</td><td><input name='huoche_size' type='NUMBER' width='60'></td></tr>
+
+</table>
+<p><input value='尝试一下！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

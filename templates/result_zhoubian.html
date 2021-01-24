@@ -1,0 +1,12 @@
+{% extends 'chushi.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="/static/hf.css" />
+<div class="table-container">
+<p>您输入的地点为：{{ the_didian }}</p>
+<table>
+<tr><td>周边:</td><td>{{ the_zhoubian }}</td></tr>
+</table>
+</div>
+
+{% endblock %}

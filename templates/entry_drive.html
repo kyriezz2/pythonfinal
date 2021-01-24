@@ -1,0 +1,20 @@
+{% extends 'chushi.html' %}
+
+{% block body %}
+
+
+<link rel="stylesheet" href="/static/hf.css" />
+
+<form method='POST' action='/search4'>
+<table>
+    <p>驾车路线规划，请输入起点和终点（请用结构化地址，例如：广东省深圳市福田区中心公园）</p>
+{#<tr><td>color:</td><td><input name='color' type='color' width='60'></td></tr>#}
+{#<tr><td>color01:</td><td><input name='color01' type='color' width='60'></td></tr>#}
+<tr><td>请输入起点:</td><td><input name='car_origin' type='TEXT' width='60'></td></tr>
+    <tr><td>请输入终点:</td><td><input name='car_zhongdian' type='TEXT' width='60'></td></tr>
+
+</table>
+<p><input value='尝试一下！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

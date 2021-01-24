@@ -1,0 +1,19 @@
+{% extends 'chushi.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<link rel="stylesheet" href="/static/hf.css" />
+<form method='POST' action='/search2'>
+<table>
+    <p>步行规划，请输入起点和终点</p>
+{#<tr><td>color:</td><td><input name='color' type='color' width='60'></td></tr>#}
+{#<tr><td>color01:</td><td><input name='color01' type='color' width='60'></td></tr>#}
+<tr><td>请输入起点:</td><td><input name='walk_origin' type='TEXT' width='60'></td></tr>
+    <tr><td>请输入终点:</td><td><input name='walk_disitination' type='TEXT' width='60'></td></tr>
+
+</table>
+<p><input value='尝试一下吧！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
